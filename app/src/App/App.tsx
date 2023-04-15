@@ -1,17 +1,16 @@
-import { AST } from 'prettier';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, View } from 'react-native';
 
-export const color = {
-	primary: '#f7287b',
-	secondary: '#c717fc',
-};
+import Chat from './Chat';
+import color from './Color';
+import Header from './Header';
+import Peoples from './Peoples';
 
 const App = () => {
-	const color: AST = '';
-
 	return (
-		<View id='oui' style={styles.container}>
-			<Text>Open up App.js to start working on y</Text>
+		<View style={styles.container}>
+			<Header />
+			<Peoples />
+			<Chat />
 		</View>
 	);
 };
